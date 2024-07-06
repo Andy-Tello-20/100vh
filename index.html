@@ -23,30 +23,58 @@
         background-color: #7390b1;
         display: flex;
         flex-direction: column;
-     
-       
+
+
     }
 
     .header {
-    height: 100px; /* Altura fija para el primer div */
-    background-color: #007BFF;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
+        height: 100px;
+        /* Altura fija para el primer div */
+        background-color: #007BFF;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
-.contenido {
-    flex-grow: 1; /* El segundo div ocupa el espacio restante */
-    overflow-y: auto;
-    padding: 20px;
-    background: #d6d696;
-    box-sizing: border-box;
-}
+    .contenido {
+        flex-grow: 1;
+        /* El segundo div ocupa el espacio restante */
+        overflow-y: auto;
+        padding: 20px;
+        background: #d6d696;
+        box-sizing: border-box;
+        text-align: center;
+    }
 
     h1 {
         text-align: center;
         margin-top: 0;
+    }
+
+
+    .sub-header {
+        display: flex;
+        height: 8vh;
+        justify-content: center;
+        align-items: center;
+        padding: 7px 60px;
+        background: #ffff;
+        width: 100%;
+        position: sticky;
+        bottom: 0;
+        z-index: 2;
+    }
+
+    .btn-send {
+        margin-top: 25px;
+        background: #3CA367;
+        color: #fff;
+        border: none;
+        width: 111px;
+        height: 34px;
+        border-radius: 7px;
+
     }
 </style>
 
@@ -60,27 +88,49 @@
                 Este es un párrafo de prueba para demostrar el desplazamiento en un contenedor que ocupa el 100% de la
                 altura visible del viewport.
                 Este texto es largo y seguirá repitiéndose para llenar el espacio y permitir el desplazamiento.
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor. Nulla facilisi.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sit amet accumsan tortor. Nulla
+                facilisi.
                 Donec ut urna magna. Fusce vehicula risus at risus congue, a malesuada urna laoreet. Nullam eget varius
-                eros. Duis auctor turpis ac tortor blandit, ut fringilla felis elementum. Curabitur et orci est. Vestibulum
-                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vulputate sagittis massa,
+                eros. Duis auctor turpis ac tortor blandit, ut fringilla felis elementum. Curabitur et orci est.
+                Vestibulum
+                ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Etiam vulputate sagittis
+                massa,
                 a finibus lacus. Sed tincidunt convallis felis, at scelerisque elit dignissim eget. Morbi dictum mi a
                 malesuada pretium. Integer non libero vitae eros eleifend finibus.
             </p>
             <p>
                 Este es otro párrafo para seguir demostrando el desplazamiento. Lorem ipsum dolor sit amet, consectetur
-                adipiscing elit. Phasellus laoreet ultrices orci, sit amet vestibulum risus vestibulum in. Nullam non felis
+                adipiscing elit. Phasellus laoreet ultrices orci, sit amet vestibulum risus vestibulum in. Nullam non
+                felis
                 dolor. Sed nec libero vel odio ullamcorper cursus. Suspendisse potenti. Integer ac ex in ligula pulvinar
-                mollis ac vel felis. Quisque id urna lacus. Proin sed urna a libero cursus convallis. Etiam non sem at orci
+                mollis ac vel felis. Quisque id urna lacus. Proin sed urna a libero cursus convallis. Etiam non sem at
+                orci
                 pulvinar consectetur. Integer ac egestas risus, at malesuada libero.
             </p>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi laudantium officiis similique vitae itaque optio rem saepe provident asperiores eveniet reiciendis eos, tempora consequuntur ducimus vero voluptas corporis obcaecati magnam exercitationem porro. Incidunt a deserunt asperiores, corrupti voluptatem illum laudantium odio facilis magni porro veniam recusandae, ratione repudiandae, eius fugit. Officia blanditiis inventore corporis porro quisquam? Eaque fugiat eos architecto dolore voluptas modi debitis facere incidunt nam, voluptates ratione molestias omnis optio earum aperiam quis error quos recusandae itaque? Sequi pariatur aliquid tenetur non libero veritatis incidunt nam vitae delectus? Reiciendis, iure libero eum tenetur molestiae officia laborum necessitatibus, dolor tempore provident quam nesciunt ducimus ipsa illo enim dolorum magnam! Nulla error assumenda quae exercitationem officiis ducimus velit possimus nihil. Debitis numquam esse magni mollitia in. Culpa corrupti, eos vero atque officia similique voluptatem pariatur. Ex delectus omnis cupiditate. Animi fugiat et reiciendis sequi fuga obcaecati ut quisquam officiis tenetur. Laboriosam vero nihil doloribus, aspernatur tempore voluptates est quia a, at error quod ad nesciunt sit. Doloribus, assumenda? Facere alias quisquam quidem sunt quis libero a saepe in fugiat assumenda reiciendis tempora, quia suscipit nulla hic quasi nam sit vitae voluptatibus exercitationem mollitia nesciunt porro! Molestias odit corporis voluptatibus!
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, excepturi laudantium officiis
+                similique vitae itaque optio rem saepe provident asperiores eveniet reiciendis eos, tempora consequuntur
+                ducimus vero voluptas corporis obcaecati magnam exercitationem porro. Incidunt a deserunt asperiores,
+                corrupti voluptatem illum laudantium odio facilis magni porro veniam recusandae, ratione repudiandae,
+                eius fugit. Officia blanditiis inventore corporis porro quisquam? Eaque fugiat eos architecto dolore
+                voluptas modi debitis facere incidunt nam, voluptates ratione molestias omnis optio earum aperiam quis
+                error quos recusandae itaque? Sequi pariatur aliquid tenetur non libero veritatis incidunt nam vitae
+                delectus? Reiciendis, iure libero eum tenetur molestiae officia laborum necessitatibus, dolor tempore
+                provident quam nesciunt ducimus ipsa illo enim dolorum magnam! Nulla error assumenda quae exercitationem
+                officiis ducimus velit possimus nihil. Debitis numquam esse magni mollitia in. Culpa corrupti, eos vero
+                atque officia similique voluptatem pariatur. Ex delectus omnis cupiditate. Animi fugiat et reiciendis
+                sequi fuga obcaecati ut quisquam officiis tenetur. Laboriosam vero nihil doloribus, aspernatur tempore
+                voluptates est quia a, at error quod ad nesciunt sit. Doloribus, assumenda? Facere alias quisquam quidem
+                sunt quis libero a saepe in fugiat assumenda reiciendis tempora, quia suscipit nulla hic quasi nam sit
+                vitae voluptatibus exercitationem mollitia nesciunt porro! Molestias odit corporis voluptatibus!
             </p>
+            <button class="btn-send">Enviar</button>
         </div>
-        
-        
-    
+
+        <header class="sub-header">
+            <h3>iconos</h3>
+        </header>
+
     </div>
 
 
